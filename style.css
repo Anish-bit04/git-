@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:25px ;
+
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.newBtnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+button{
+    width: 100px;
+    align-self: center;
+    font-size: 15px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: rgb(255, 0, 0);
+
+}
+
+.last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.submit{
+    margin-left: 5px;
+}
+.input > input{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+}
+.checkbox > label{
+   font-size: 19px;
+   margin: 5px;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 5px;
+    
+}
+.cross{
+   font-size: 35px;
+}
+.popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 50px;
+}
