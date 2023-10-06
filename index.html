@@ -7,34 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="head">
-        <h1>The Library  </h1>
+    <h1>Library Project</h1>
+    <div id='newBtn-Container'>
+        <button id='newBtn'>+ New Book</button>
     </div>
-   
-    <div class="newBtnContainer">
-        <button>+ New Book</button>
-    </div>
-
-        <div class="popup">
-            <span class="cross">&times;</span>
-            <form action="">
-                
-                <div class="input">
-                    
-                    <h2>Add New Book</h2>
-                    <input type="text" placeholder="Title" required />
-                    <input type="text" placeholder="Author" required />
-                    <input type="number" placeholder="Pages" required />
-                </div>
-              
-                <div class="last">
-                <div class="checkbox"><label>Read: </label><input type="checkbox"  required /></div>
-                <div class="submit"><button>Add</button></div>
+     <div id="popUp">
+        <form id='form' action='/Script.js'>
+            <span class="close">&times;</span>
+            <ledgend>New Book</ledgend>
+            <div id='textInput'> 
+                <p><input type='text' id='title' name='title' placeholder='Title'></p>
+                <p><input type='text' id='author' name='author' placeholder='Author'></p>
+                <p><input type='number' id='pages' name='pages' placeholder='Pages'></p>
             </div>
-            </form>
-        </div>
-   <div class="container"></div>
+            <div id='checkBox'>
+                <p><label >Read: </label><input type='checkbox' id='read' name='read' value='yes'></p>
+            </div>
+            <button type='submit' form='form' id='addBtn'>Add</button>
+        </form>
+    </div>
+    <div id='Library-container'></div>
 
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
